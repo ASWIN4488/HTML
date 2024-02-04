@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)https://iaspire-prod-submissions.s3.ap-south-1.amazonaws.com/user_vpl_submission/288/28664/FOREVER.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Forever Event Management</title> 
+    <style>
+        *{
+            font-weight: bold;
+        }
+        body{
+        	background-image:url("foreverbg.jpg");
+        	background-size:cover;
+        }
+        table{
+        	width:55%;
+        	height:70%;
+        	margin-left: auto;
+        	margin-right: auto;
+        	border-spacing: 5px;
+        }
+        #foot{
+        	margin-left: 600px;
+        	border-spacing: 5px;	
+        }
+        #submit,#reset{
+        	padding:7px;
+        	font-size:15px;
+        	color: #ffffff;
+        	background-color: #192841;
+        }	
+        img{
+        	margin-left: 500px;
+        	margin-top : 6px;
+        	margin-bottom: 1px;
+        }
+        td{
+        	background-color: #ffffff;
+        }
+        caption, table, td{
+        	border:1px solid #000000;
+        }
+        caption{	
+        	font-size:20px;
+        	font-weight:bold;
+        	color: white;
+        	background-color: #192841;
+        	padding:5px;
+        }
+        input[type="tel"],input[type="email"],input[type="text"],
+        select,textarea, input[type="number"], input[type="url"],
+        input[type="date"]{
+        	width:100%;
+        }
+        input[type="range"]{
+        	width:80%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function show_value(x)
+        {
+        	document.getElementById("demo").innerHTML="Rs."+x;
+        }
+    </script>
+    <form>
+        <figure id="forever_image">
+        	<img id="image1" src="./Forever Event Management_files/forever.jpg" height="80" width="200" alt="bg_image">an Event Management company
+        </figure>
+        <table>
+             <caption id="table_caption">Vendor Registration Form</caption>
+             <tbody><tr>
+                 <td><label for="cname">Company Name</label></td>
+                 <td><input type="text" id="cname" name="cname" required=""></td>
+             </tr>
+             <tr>
+                 <td><label>Type</label></td>
+                 <td>
+                     <input type="radio" id="corporation" name="ctype"> Corporation
+                     <input type="radio" id="partnership" name="ctype"> Partnership
+                     <input type="radio" id="individual" name="ctype">  Individual
+                     <input type="radio" id="others" name="ctype"> Others
+                 </td>
+             </tr>
+             <tr>
+                 <td><label for="phno">Phone Number</label></td>
+                 <td><input type="tel" id="phno" name="phno" pattern="[7-9]{1}[0-9]{9}" required=""></td>
+             </tr>
+             <tr>
+                 <td><label for="email">Email ID</label></td>
+                 <td><input type="email" id="email" name="email" required=""></td>
+             </tr>
+             <tr>
+                 <td><label for="address">Location</label></td>
+                 <td><textarea type="address" id="address" name="address" rows="4" cols="50" required=""></textarea></td>
+             </tr>
+             
+             <tr>
+                 <td><label for="tin">TIN NO</label></td>
+                 <td><input type="number" id="tin" name="tin" required=""></td>
+             </tr>
+              <tr>
+                 <td><label for="expiry">TIN NO Expiry Date</label></td>
+                 <td><input type="date" id="expiry" name="expiry" required=""></td>
+             </tr>
+             <tr>
+                 <td><label for="cost">Average Projext Cost</label></td>
+                 <td><input type="range" id="cost" name="cost" min="25000" max="500000" step="1000" onchange="show_value(this.value)" required="">
+                    <span id="range_value"></span>
+                 </td>
+             </tr>
+             <tr>
+                 <td><label for="profile">Upload Images of License, PAN &amp; Facade</label></td>
+                 <td><input type="file" id="profile" name="profile" accept="image/*" multiple="" required=""></td>
+             </tr>
+        </tbody></table><br>
+        <div id="foot">
+           <input type="submit" value="REGISTER">
+           <input type="reset" value="CLEAR">
+        </div>
+    </form>
+
+</body></html>
